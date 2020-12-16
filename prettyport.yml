@@ -1,0 +1,19 @@
+---
+
+- hosts: openstack
+  gather_facts: no
+
+  tasks:
+    - pause:
+        prompt: "What Port Group you want to check the status, e.g. m1, bp, gn, oam, bgp, sgi, mbms, mate, vfab, vprobes, heartbeat, internal ?"
+      register: portGroup
+
+    - name: ... removing the undesired facts, pause may have added.
+      set_fact:
+        PG: "{{ portGroup.user_input }}"
+
+    - shell: . ~/openrc.sh;openstack port list|grep {{ PG }} |awk '{print $4,$8,$9,$11}' > port.txt
+
+    - command: python3 prettyport.py
+      register: result
+    - debug: var=result.stdout_lines
