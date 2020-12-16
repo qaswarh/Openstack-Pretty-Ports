@@ -4,7 +4,7 @@ Like other openstack commands port list command has a quite a few options for a 
 
 usage: openstack port list [-h] [-f {csv,json,table,value,yaml}] [-c COLUMN]
 
-I couldn't figure out how I can keep only desired columns simultaneiously. The -c option allow you to display one column at a time. Either this option can't display the desired columns simultaneously or my ignorance on this inspired me to write a playbook in ansible
+I couldn't figure out how I can keep only desired columns simultaneiously. The -c option allow the user to display one column at a time. Either this option can't display the desired columns simultaneously or my ignorance on this inspired me to write a playbook in ansible
 
 This playbook not only reduced the number of columns but give the user keywords in the newtworks to choose the network from and displays the ports for that network.
 
