@@ -4,3 +4,5 @@ Like other openstack commands port list command has a quite a few options for a 
 
 This playbook not only reduced the number of columns but give the user keywords in the newtworks to choose the network from and displays the ports for that network.
 
+For example if I wanted to see the virtual fabric ports in one of the VNF, here is the pretty print, though looks ugly when info is not shown
+
