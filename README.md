@@ -6,3 +6,4 @@ This playbook not only reduced the number of columns but give the user keywords 
 
 For example if I wanted to see the virtual fabric ports in one of the VNF, here is the pretty print, though looks ugly when info is not shown
 
+![vfab](https://user-images.githubusercontent.com/47313728/102305703-87320f00-3f15-11eb-88be-3282f3290515.png)
