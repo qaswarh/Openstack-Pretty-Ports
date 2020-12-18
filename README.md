@@ -6,7 +6,7 @@ usage: openstack port list [-h] [-f {csv,json,table,value,yaml}] [-c COLUMN]
 
 I couldn't figure out how I can keep only desired columns simultaneiously. The -c option allow the user to display one column at a time. Either this option can't display the desired columns simultaneously or my ignorance on this inspired me to write a playbook in ansible
 
-With reduced number of columns the user is asked for the keyword to choose the network and displays the ports for that network.
+With reduced number of columns the user is asked for the keyword to choose the group and the playbook displays the ports for that category.
 
 For example the user input 'vfab' would show virtual fabric ports. Here is the pretty print snippet, though looks ugly when info is not shown
 
